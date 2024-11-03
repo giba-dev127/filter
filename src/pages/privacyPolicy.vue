@@ -11,7 +11,7 @@
       </template>
       <template #r>
         <div
-          class="w-full flex flex-col self-start items-start p-4 gap-4 text-black border-t-2 md:border-t-0 md:border-l border-black"
+          class="w-full flex flex-col self-start items-start p-4 gap-4 text-black"
         >
           <h1 class="text-xl md:text-2xl font-bold text-start">
             Privacy Policy of www.filter.li

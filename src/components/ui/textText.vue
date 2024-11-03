@@ -1,5 +1,5 @@
 <template>
-  <p class="text-base font-medium">
+  <p class="text-sm xs:text-lg font-medium">
    {{ text }}
   </p>
 </template>

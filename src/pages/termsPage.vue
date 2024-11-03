@@ -2,13 +2,13 @@
   <pageWrapper>
    <page-section :is-snap="false" :is-popolam="false">
       <template #l>
-         <div class="w-full mt-10 md:mt-0 md:max-w-[660px] flex flex-col items-start gap-5">
+         <div class="w-full mt-16 md:mt-0 md:max-w-[660px] flex flex-col items-start gap-5">
             <textTitle text="Terms & Conditions" />
-            <textText text="Please read these Terms of Service (the “Terms”) and our Privacy Policy (“Privacy Policy”) carefully because they govern your use of the website located at cosmos.so (the “Site”) and services accessible via the Site and corresponding mobile application (“App”) offered by “Cosmos”). To make these Terms easier to read, the Site, our services and App are collectively called the “Services.”" />
+            <textText class="w-full max-w-[630px] mb-4 xs:mb-0" text="Please read these Terms of Service (the “Terms”) and our Privacy Policy (“Privacy Policy”) carefully because they govern your use of the website located at cosmos.so (the “Site”) and services accessible via the Site and corresponding mobile application (“App”) offered by “Cosmos”). To make these Terms easier to read, the Site, our services and App are collectively called the “Services.”" />
          </div>
       </template>
       <template #r>
-         <div class="flex flex-col gap-2 px-2 self-start md:mt-4">
+         <div class="flex flex-col gap-2 px-5 self-start mt-4">
             <h4 class="font-bold">1. Agreement to Terms.</h4>
             <p>By using our Services, you agree to be bound by these Terms. If you don’t agree to be bound by these Terms, do not use the Services.</p>
             <h4 class="font-bold">2. Privacy Policy.</h4>

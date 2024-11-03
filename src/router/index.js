@@ -1,9 +1,9 @@
-import { createRouter, createWebHashHistory } from "vue-router"
+import { createRouter, createWebHistory } from "vue-router"
 import homeLanding from "../pages/homeLanding.vue"
 
 const routes = [
    {
-      path: '/',
+      path: 'home',
       name: 'home-landing',
       component: homeLanding
    },
@@ -24,9 +24,13 @@ const routes = [
    }
 ]
 
+routes.map(route => {
+   route.path = '/filter/' + route.path
+})
+
 const router = createRouter({
    routes,
-   history: createWebHashHistory()
+   history: createWebHistory()
 })
 
 export default router;

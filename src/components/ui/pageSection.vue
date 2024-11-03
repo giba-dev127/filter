@@ -1,7 +1,7 @@
 <template>
   <section
     ref="scrollElement"
-    class="scroll-element w-full h-screen min-h-screen md:py-0 md:h-full flex flex-col md:flex-row items-center"
+    class="scroll-element w-full h-screen min-h-screen md:py-0 md:h-full flex flex-col md:flex-row items-center divide-y-2 md:divide-y-0 md:divide-x-2 divide-[#DFDFDF]"
     :class="[
       isSnap ? 'snap-start' : '',
       isWholeScrollable ? 'overflow-y-auto' : 'overflow-hidden',
@@ -9,17 +9,17 @@
     ]"
   >
     <div
-      :class="isPopolam ? 'h-1/2' : 'h-full'"
-      class="w-full md:w-1/2 px-2 md:px-4 md:h-full md:pt-16 md:pb-20 flex items-center"
+      :class="isPopolam ? 'h-1/3 mt-4' : 'h-full'"
+      class="relative w-full md:w-1/2 px-4 flex items-center"
     >
       <slot name="l" />
     </div>
     <div
       :class="[
-        isPopolam ? 'h-1/2' : 'h-full',
+        isPopolam ? 'h-2/3' : 'h-full',
         isWholeScrollable ? '' : 'overflow-y-auto',
       ]"
-      class="w-full md:w-1/2 z-40 md:h-full flex justify-center items-center"
+      class="relative w-full md:w-1/2 z-40 md:h-full flex justify-center items-center"
     >
       <slot name="r" />
     </div>

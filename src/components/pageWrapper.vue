@@ -4,7 +4,7 @@
 
   <slot />
 
-  <footer-component />
+  <footer-component class="hidden xs:flex" />
   </div>
 </template>
 

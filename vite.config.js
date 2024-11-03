@@ -4,8 +4,8 @@ import vue from '@vitejs/plugin-vue'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: '/filter-landing-page/',
-  build: {
-    manifest: true
+  base: '/filter',
+  server: {
+    historyApiFallback: true,
   },
 })
