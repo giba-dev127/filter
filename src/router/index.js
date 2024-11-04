@@ -33,8 +33,4 @@ const router = createRouter({
    history: createWebHistory()
 })
 
-router.beforeEach((to, from) => {
-   console.log('to ', to, '/n from ', from)
-})
-
 export default router;
