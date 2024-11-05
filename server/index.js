@@ -19,10 +19,6 @@ app.use(cors({
    origin: 'http://localhost:5173/filter'
 }))
 
-app.get('/', (req, res) => {
-   res.send('Hello World');
- });
-
 app.listen(1234, () => {
    console.log("Express is running on port 1234")
 })
