@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(helmet.contentSecurityPolicy({
    directives: {
       defaultSrc: ["'self'"],
-      scriptSrc: ["'self'", "'unsafe-inline', 'unsafe-eval'"],
+      scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
       imgSrc: ["'self'", "data:"],
       styleSrc: ["'self'", "'unsafe-inline'"],
       fontSrc: ["'self'", "https://fonts.gstatic.com"],
@@ -16,7 +16,7 @@ app.use(helmet.contentSecurityPolicy({
 }))
 app.use(cors({
    credentials: true,
-   origin: 'https://giba-dev127.github.io/filter/'
+   origin: 'http://localhost:5173/filter'
 }))
 
 app.get('/', (req, res) => {
