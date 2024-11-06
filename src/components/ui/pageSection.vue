@@ -28,6 +28,7 @@
 
 <script setup>
 import { ref, onMounted, onDeactivated } from "vue";
+// import { useIntersectionObserver } from "@vueuse/core";
 
 defineProps({
   isPopolam: { type: Boolean, default: true },
@@ -38,30 +39,30 @@ defineProps({
 const scrollElement = ref(null);
 const isVisible = ref(false);
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        isVisible.value = true;
-      } else {
-        isVisible.value = false;
-      }
-    });
-  },
-  { threshold: 0.8 }
-);
+// const observer = new IntersectionObserver(
+//   (entries) => {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         isVisible.value = true;
+//       } else {
+//         isVisible.value = false;
+//       }
+//     });
+//   },
+//   { threshold: 0.8 }
+// );
 
-onMounted(() => {
-  if (scrollElement.value) {
-    observer.observe(scrollElement.value);
-  }
-});
+// onMounted(() => {
+//   if (scrollElement.value) {
+//     observer.observe(scrollElement.value);
+//   }
+// });
 
-onDeactivated(() => {
-  if (scrollElement.value) {
-    observer.unobserve(scrollElement.value);
-  }
-});
+// onDeactivated(() => {
+//   if (scrollElement.value) {
+//     observer.unobserve(scrollElement.value);
+//   }
+// });
 </script>
 
 <style>
